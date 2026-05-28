@@ -6,10 +6,9 @@ Thank you for taking the time to contribute! This project is open to learners, s
 
 ## Table of Contents
 
-- [Code of Conduct](#code-of-conduct)
 - [Getting Started](#getting-started)
 - [How to Contribute](#how-to-contribute)
-- [commit and Branch Naming Convention](#commit-and-branch-naming-convention)
+- [Commit and Branch Naming Convention](#commit-and-branch-naming-convention)
 - [Coding Standards](#coding-standards)
 - [Adding a New Module](#adding-a-new-module)
 - [Testing](#testing)
@@ -18,12 +17,6 @@ Thank you for taking the time to contribute! This project is open to learners, s
 
 ---
 
-## Code of Conduct
-
-<!-- Add your code of conduct or link to a CODE_OF_CONDUCT.md -->
-Be civil and respectful, thats it, no more demands, just dont be sexist or racist and you are good. Also dont spam "any updates" in the PR thread, wait for 2-3 days before a follow up. If you have any technical or conceptual doubts, dont ask it in a Issue or PR thread. There is a special discord server I have created for that purpose. Link -     https://discord.gg/MWv949G8h
-
----
 
 ## Getting Started
 
@@ -41,13 +34,6 @@ I am not against usage of AI, you can use AI, but you do the thinking part, let 
 - GNU Make ≥ 3.81
 - Valgrind (for checking memory leaks)
 - Git
-
-### Fork & Clone
-
-```bash
-git clone https://github.com/<your-username>/C_DSA_interactive_suite.git
-cd C_DSA_interactive_suite
-```
 
 ### Build
 
@@ -78,7 +64,7 @@ Please check the [Issues](https://github.com/darshan2456/C_DSA_interactive_suite
 
 ---
 
-## Branch Naming Convention
+## Commit and Branch Naming Convention
 
 Use clear, concise commit messages in the following form:
 
@@ -155,7 +141,7 @@ All contributions which introduces a new module (ds/algo) must include tests:
 make test
 
 # Run with Valgrind
-valgrind --leak-check=full ./test_binary
+make valgrind
 ```
 
 The CI pipeline runs all tests and Valgrind checks automatically on every push and pull request. A PR will not be merged if CI fails.
