@@ -1,6 +1,7 @@
 #include "tbt.h"
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 void test_insert_success()
 {
@@ -66,6 +67,23 @@ void test_empty_tree()
     printf("TBT empty tree test passed\n");
 }
 
+void test_create_node()
+{
+
+    TBTnode* new_node = create_node_tbt(42);
+
+    assert(new_node != NULL);
+    assert(new_node->data == 42);
+    assert(new_node->lthread == true);
+    assert(new_node->rthread == true);
+    assert(new_node->left == NULL);
+    assert(new_node->right == NULL);
+
+    free(new_node);
+
+    printf("TBT create node test passed\n");
+}
+
 int main()
 {
     test_insert_success();
@@ -73,6 +91,7 @@ int main()
     test_invalid_input();
     test_leftmost();
     test_empty_tree();
+    test_create_node();
 
     printf("All TBT tests passed\n");
     return 0;
