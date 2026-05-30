@@ -1,6 +1,7 @@
 #ifndef DATA_STRUCTURES_H
 #define DATA_STRUCTURES_H
 #define INPUT_EXIT_SIGNAL -111
+#define HEAP_SIZE 100
 #include <stdbool.h>
 #include <stddef.h>
 
@@ -94,3 +95,10 @@ void destroy_tbt(TBTnode* node);
 void TBT_demo(void);
 
 #endif
+
+// For Priority Queue
+typedef struct priority_queue
+{
+    int size;
+    int heap[HEAP_SIZE];
+} priority_queue;
