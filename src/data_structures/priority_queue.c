@@ -175,7 +175,8 @@ void priority_queue_demo(void)
             {
                 int insert_val;
                 int insert_status = safe_input_int(
-                    &insert_val, "\nEnter a number to insert into heap: ", INT_MIN, INT_MAX);
+                    &insert_val,
+                    "\nEnter a number to insert into heap (Insert any whole number): ", 0, INT_MAX);
 
                 if (insert_status == INPUT_EXIT_SIGNAL)
                 {

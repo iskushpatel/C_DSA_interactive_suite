@@ -38,13 +38,14 @@ void data_structures_demo(void)
                 while (1)
                 {
                     int linear_ds_choice;
-                    int linear_ds_status = safe_input_int(&linear_ds_choice,
-                                                          "\nenter 1 for singly linked list demo"
-                                                          "\nenter 2 for doubly linked list demo"
-                                                          "\nenter 3 for arrays demo"
-                                                          "\nenter 4 for priority queue (binary heap implementation with array) demo"
-                                                          "\nenter choice : ",
-                                                          1, 4);
+                    int linear_ds_status = safe_input_int(
+                        &linear_ds_choice,
+                        "\nenter 1 for singly linked list demo"
+                        "\nenter 2 for doubly linked list demo"
+                        "\nenter 3 for arrays demo"
+                        "\nenter 4 for priority queue (binary heap implementation with array) demo"
+                        "\nenter choice : ",
+                        1, 4);
 
                     if (linear_ds_status == INPUT_EXIT_SIGNAL)
                         break;
@@ -67,7 +68,7 @@ void data_structures_demo(void)
                         array_demo();
                         continue;
                     }
-                    if(linear_ds_choice == 4)
+                    if (linear_ds_choice == 4)
                     {
                         priority_queue_demo();
                         continue;
@@ -99,12 +100,12 @@ void data_structures_demo(void)
                 while (1)
                 {
                     int non_linear_ds_choice;
-                    int non_linear_ds_status = safe_input_int(
-                        &non_linear_ds_choice,
-                        "\nenter 1 for binary search tree demo"
-                        "\nenter 2 for threaded binary tree demo"
-                        "\nenter choice: ",
-                        1, 3);
+                    int non_linear_ds_status =
+                        safe_input_int(&non_linear_ds_choice,
+                                       "\nenter 1 for binary search tree demo"
+                                       "\nenter 2 for threaded binary tree demo"
+                                       "\nenter choice: ",
+                                       1, 3);
                     if (non_linear_ds_status == INPUT_EXIT_SIGNAL)
                         break;
                     if (non_linear_ds_status == 0)
