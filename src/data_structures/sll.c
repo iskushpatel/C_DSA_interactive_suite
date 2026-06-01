@@ -5,7 +5,7 @@
 
 // methods implemented are - insertAtEnd, deleteAtBeginning, insertAtBeginning, deleteAtEnd,
 // printlist, search
-//  deleteByValue and reverseList
+// deleteByValue and reverseList
 
 void sll_Demo(void)
 {
