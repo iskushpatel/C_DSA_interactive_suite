@@ -61,6 +61,9 @@ int dll_deleteByValue(doubly_ll_Node** head_ref, int key);
 void delete_dll(doubly_ll_Node* head);
 void dll_demo(void);
 int dll_reverselist(doubly_ll_Node** head_ref);
+int dll_getLength(const doubly_ll_Node* head);
+int dll_insertAtPosition(doubly_ll_Node** head_ref, int value, int position);
+int dll_deleteAtPosition(doubly_ll_Node** head_ref, int position);
 
 // For single linked list
 typedef struct Node
@@ -78,6 +81,9 @@ void sll_Demo(void);
 int sll_search(const Node* head, int key);
 int sll_reverseList(Node** head_ref);
 void delete_sll(Node* head);
+int sll_getLength(const Node* head);
+int sll_insertAtPosition(Node** head_ref, int value, int position);
+int sll_deleteAtPosition(Node** head_ref, int position);
 
 // For Threadded Binary Tree
 typedef struct TBTnode
